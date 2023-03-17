@@ -41,10 +41,6 @@ class MainActivity : AppCompatActivity() {
                     "Diablo 2",
                 ).random()
         }
-
-        binding.btnSendMessageTwoFragment.setOnClickListener {
-            dataModel.messageForTwoFragment.value = arrayOf("", "", "", "", "", "", "").random()
-        }
     }
 
     private fun openFrag(f: Fragment, idHolder: Int) {
