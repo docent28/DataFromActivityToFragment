@@ -29,6 +29,18 @@ class MainActivity : AppCompatActivity() {
                     "Горелки"
                 ).random()
         }
+        binding.btnSendMessageTwoFragment.setOnClickListener {
+            dataModel.messageForTwoFragment.value =
+                arrayOf(
+                    "Battletoads",
+                    "Comix Zone",
+                    "Counter-Strike",
+                    "DotA",
+                    "Crash Bandicoot",
+                    "Spyro The Dragon",
+                    "Diablo 2",
+                ).random()
+        }
 
         binding.btnSendMessageTwoFragment.setOnClickListener {
             dataModel.messageForTwoFragment.value = arrayOf("", "", "", "", "", "", "").random()
